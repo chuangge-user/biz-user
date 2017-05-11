@@ -1,0 +1,137 @@
+# Ns
+nsHome=${user.home}/.ns_config
+
+
+################    READ数据源相关配置 开始   ###################
+# jdbc:mysql://172.16.10.35:3306/hoss_dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull
+# hoss_dev_user
+# hoss_dev123
+
+#数据库地址
+dataSource.read.url=jdbc:mysql://10.14.87.144:3306/haowu_base?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull
+#数据库用户名
+dataSource.read.username=root
+#数据库密码
+dataSource.read.password=jfdev123
+#初始多少个连接
+dataSource.read.initialSize=10
+#最小多少个连接
+dataSource.read.minIdle=10
+#最大多少个连接
+dataSource.read.maxActive=200
+#超时等待时间(毫秒)
+dataSource.read.maxWait=60000
+#间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+dataSource.read.timeBetweenEvictionRunsMillis=50000
+#一个连接在池中最小生存的时间，单位是毫秒
+dataSource.read.minEvictableIdleTimeMillis=300000
+#监控统计拦截的filters
+dataSource.read.filters=stat
+#验证连接有效性的SQL
+dataSource.read.validationQuery=SELECT 1
+#测试空闲连接
+dataSource.read.testWhileIdle=true
+#获取连接验证
+dataSource.read.testOnBorrow=false
+#连接放回连接池验证
+dataSource.read.testOnReturn=false
+#是否打开PSCache
+dataSource.read.poolPreparedStatements=true
+#PSCache 大小
+dataSource.read.maxPoolPreparedStatementPerConnectionSize=20
+
+################    READ数据源相关配置 结束   ###################
+
+################    WRITE数据源相关配置 开始   ###################
+
+#数据库地址
+dataSource.write.url=jdbc:mysql://10.14.87.144:3306/haowu_base?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull
+#数据库用户名
+dataSource.write.username=root
+#数据库密码
+dataSource.write.password=jfdev123
+#初始多少个连接
+dataSource.write.initialSize=10
+#最小多少个连接
+dataSource.write.minIdle=10
+#最大多少个连接
+dataSource.write.maxActive=200
+#超时等待时间(毫秒)
+dataSource.write.maxWait=60000
+#间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+dataSource.write.timeBetweenEvictionRunsMillis=50000
+#一个连接在池中最小生存的时间，单位是毫秒
+dataSource.write.minEvictableIdleTimeMillis=300000
+#监控统计拦截的filters
+dataSource.write.filters=stat
+#验证连接有效性的SQL
+dataSource.write.validationQuery=SELECT 1
+#测试空闲连接
+dataSource.write.testWhileIdle=true
+#获取连接验证
+dataSource.write.testOnBorrow=false
+#连接放回连接池验证
+dataSource.write.testOnReturn=false
+#是否打开PSCache
+dataSource.write.poolPreparedStatements=true
+#PSCache 大小
+dataSource.write.maxPoolPreparedStatementPerConnectionSize=20
+
+################    WRITE数据源相关配置 结束   ###################
+
+
+################    dubbo   ###################
+environment=integrate
+#应用名称
+app_name=hoss-login-srv
+
+##############  注册中心配置 开始  ##############
+#注册中心的地址
+#registry.url=zookeeper://172.16.10.97:2181?backup=172.16.10.105:2181,172.16.10.71:2181
+registry.url=zookeeper://127.0.0.1:2181
+#############  注册中心配置 结束   ##############
+
+
+#############  协议相关配置 开始   ##############
+#端口
+protocol.port=20886
+#############  协议相关配置 结束   ##############
+
+
+
+
+#############  消费者相关配置 开始  ##############
+
+#检查服务提供者是否存在
+consume.service_check=false
+#消费者默认版本
+consumer.default_version=1.0.1_gn
+
+#############  消费者相关配置 结束  ##############
+
+##############  生产者相关配置 开始  ##############
+
+#生产者默认版本号
+provider.default_version=1.0.1_gn
+#生成者超时时间
+provider.timeout=2000
+
+##############  生产者相关配置 结束  ##############
+
+################    redis   #########################################################
+
+redis.poolConfig.maxIdle=300000
+redis.poolConfig.maxActive=1000
+redis.poolConfig.maxWait=500
+redis.poolConfig.testOnBorrow=true
+
+<!-- JedisConnectionFactory -->
+redis.database=7
+redis.hostName=127.0.0.1
+redis.password=
+redis.port=6379
+redis.timeout=10000
+redis.usePool=true
+redis.shardInfo=127.0.0.1
+redis.convertPipelineAndTxResults=true
+

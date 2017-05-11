@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd"
+	default-lazy-init="true">
+
+	<bean class="com.ly.fn.inf.config.ctx.config.PropertyPlaceholderConfigurer">
+		<property name="systemId" value="biz-user-srv" />
+	</bean>
+
+	<bean class="com.ly.fn.inf.config.ctx.ns.NsRegistryImpl">
+		<property name="nsHome" value="${nsHome}" />
+	</bean>
+
+	<context:component-scan base-package="com.hoss" />
+	<context:component-scan base-package="com.chuangge" />
+
+	<bean id="dubboApplicationConfig" class="com.alibaba.dubbo.config.ApplicationConfig">
+		<property name="name" value="${app_name}" />
+	</bean>
+
+	<bean id="registryConfig" class="com.alibaba.dubbo.config.RegistryConfig">
+		<property name="address" value="${registry.url}" />
+	</bean>
+
+
+	<bean id="dubboProtocolConfig" class="com.alibaba.dubbo.config.ProtocolConfig">
+		<property name="port" value="${protocol.port}" />
+	</bean>
+
+<!-- 	<import resource="classpath:spring-config/applicationContext-cache.xml" />
+	<import resource="classpath:spring-config/applicationContext-consumer.xml" />
+	<import resource="classpath:spring-config/applicationContext-jdbc.xml" />
+	<import resource="classpath:spring-config/applicationContext-provider.xml" />
+	<import resource="classpath:spring-config/applicationContext-redis.xml" /> -->
+</beans>

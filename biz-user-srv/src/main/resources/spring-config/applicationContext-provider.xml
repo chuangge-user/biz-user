@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+       default-lazy-init="true">
+
+
+
+    <!--com.alibaba.dubbo.config.spring.ServiceBean-->
+    <bean id="serviceBean" class="com.chuangge.dubbo.ServiceBean" abstract="true">
+        <property name="application" ref="dubboApplicationConfig"/>
+        <property name="version" value="${provider.default_version}"/>
+        <property name="timeout" value="${provider.timeout}"/>
+        <!--<property name="registry" ref="registryConfig"/>-->
+        <property name="registries" value="${registry.url}">
+
+        </property>
+        <property name="protocol" ref="dubboProtocolConfig"/>
+    </bean>
+    <!-- 生产者配置例子 -->
+    <bean parent="serviceBean">
+        <property name="interface" value="com.chuangge.authcenter.service.AuthUserService"/>
+    </bean>
+
+
+    
+</beans>
