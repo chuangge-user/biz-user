@@ -1,8 +1,8 @@
-package com.chuangge.authcenter.dao;
+package com.chuangge.user.dao;
 
 import org.springframework.stereotype.Repository;
 
-import com.chuangge.authcenter.model.domain.AuthUser;
+import com.chuangge.user.model.domain.AuthUser;
 
 /**
  * Copyright (C), 2012-2015, 上海好屋网信息技术有限公司

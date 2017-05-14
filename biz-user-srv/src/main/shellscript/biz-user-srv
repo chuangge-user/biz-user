@@ -53,4 +53,4 @@ done
 cd "`dirname "$REALPATH"`"
 REALDIR=`pwd`
 
-java -Dbiz-mns-srv -Dnetworkaddress.cache.ttl=60 -Dsun.net.inetaddr.ttl=60 ${JAVA_OPTS} -DLOG_DIR=${logDir}/hoss-login/log -DSLA_LOG_DIR=${logDir}/hoss-login/sla-log -jar ../lib/hoss-login-srv-1.0-SNAPSHOT.jar $*
+java -Dbiz-user-srv -Dnetworkaddress.cache.ttl=60 -Dsun.net.inetaddr.ttl=60 ${JAVA_OPTS} -DLOG_DIR=${logDir}/biz-user-srv/log -DSLA_LOG_DIR=${logDir}/biz-user-srv/sla-log -jar ../lib/biz-user-srv-1.0-SNAPSHOT.jar $*

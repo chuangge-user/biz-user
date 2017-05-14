@@ -20,7 +20,7 @@ dataSource.read.minIdle=10
 #最大多少个连接
 dataSource.read.maxActive=200
 #超时等待时间(毫秒)
-dataSource.read.maxWait=60000
+dataSource.read.maxWait=6000
 #间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
 dataSource.read.timeBetweenEvictionRunsMillis=50000
 #一个连接在池中最小生存的时间，单位是毫秒
@@ -57,7 +57,7 @@ dataSource.write.minIdle=10
 #最大多少个连接
 dataSource.write.maxActive=200
 #超时等待时间(毫秒)
-dataSource.write.maxWait=60000
+dataSource.write.maxWait=6000
 #间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
 dataSource.write.timeBetweenEvictionRunsMillis=50000
 #一个连接在池中最小生存的时间，单位是毫秒

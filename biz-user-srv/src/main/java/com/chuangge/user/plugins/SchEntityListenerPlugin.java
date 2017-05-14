@@ -1,4 +1,4 @@
-package com.chuangge.authcenter.plugins;
+package com.chuangge.user.plugins;
 
 import java.util.Collection;
 import java.util.Properties;

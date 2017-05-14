@@ -1,4 +1,4 @@
-package com.chuangge.authcenter.model.query;
+package com.chuangge.user.model.query;
 /*
  * Copyright (C), 2012-2014, 上海好屋网信息技术有限公司
  * Author:zouwei

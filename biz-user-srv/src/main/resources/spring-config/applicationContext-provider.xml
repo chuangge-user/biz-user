@@ -21,7 +21,7 @@
     </bean>
     <!-- 生产者配置例子 -->
     <bean parent="serviceBean">
-        <property name="interface" value="com.chuangge.authcenter.service.AuthUserService"/>
+        <property name="interface" value="com.chuangge.user.service.AuthUserService"/>
     </bean>
 
 

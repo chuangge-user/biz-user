@@ -1,4 +1,4 @@
-package com.chuangge.authcenter.plugins;
+package com.chuangge.user.plugins;
 
 import org.apache.commons.beanutils.PropertyUtils;
 import org.slf4j.Logger;

@@ -1,4 +1,4 @@
-package com.chuangge.authcenter.model.query;
+package com.chuangge.user.model.query;
 
 import java.io.Serializable;
 import java.util.List;

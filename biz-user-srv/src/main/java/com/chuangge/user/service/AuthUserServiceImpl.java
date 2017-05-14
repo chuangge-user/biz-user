@@ -1,4 +1,4 @@
-package com.chuangge.authcenter.service;
+package com.chuangge.user.service;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -6,12 +6,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.chuangge.authcenter.exception.AuthCenterException;
-import com.chuangge.authcenter.manager.AuthUserManager;
-import com.chuangge.authcenter.model.domain.AuthUser;
-import com.chuangge.authcenter.model.dto.UserInfoDTO;
-import com.chuangge.authcenter.model.result.ResultDO;
-import com.chuangge.authcenter.service.AuthUserService;
+import com.chuangge.user.exception.AuthCenterException;
+import com.chuangge.user.manager.AuthUserManager;
+import com.chuangge.user.model.domain.AuthUser;
+import com.chuangge.user.model.dto.UserInfoDTO;
+import com.chuangge.user.model.result.ResultDO;
 
 /**
  * Copyright (C), 2012-2014, 上海好屋网信息技术有限公司 Author:zouwei Date:2014年8月12日
@@ -39,6 +38,7 @@ public class AuthUserServiceImpl implements AuthUserService {
 	public ResultDO<UserInfoDTO> userLogin(String userName, String password)
 			throws AuthCenterException {
 		logger.info("loing userName " + userName + "password" + password);
+		
         ResultDO<UserInfoDTO> result = new ResultDO<UserInfoDTO>();
         result.setSuccess(false);
 		if (StringUtils.isEmpty(userName)) {

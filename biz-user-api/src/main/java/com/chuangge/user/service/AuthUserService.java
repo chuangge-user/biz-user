@@ -1,8 +1,8 @@
-package com.chuangge.authcenter.service;
+package com.chuangge.user.service;
 
-import com.chuangge.authcenter.exception.AuthCenterException;
-import com.chuangge.authcenter.model.dto.UserInfoDTO;
-import com.chuangge.authcenter.model.result.ResultDO;
+import com.chuangge.user.exception.AuthCenterException;
+import com.chuangge.user.model.dto.UserInfoDTO;
+import com.chuangge.user.model.result.ResultDO;
 
 /**
  * Copyright (C), 2012-2014, 上海好屋网信息技术有限公司

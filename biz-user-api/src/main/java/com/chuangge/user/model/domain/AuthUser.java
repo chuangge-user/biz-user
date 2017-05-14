@@ -1,4 +1,4 @@
-package com.chuangge.authcenter.model.domain;
+package com.chuangge.user.model.domain;
 
 import java.util.Date;
 

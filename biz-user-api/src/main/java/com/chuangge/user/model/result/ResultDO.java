@@ -2,7 +2,7 @@
  * Tmall.com Inc.
  * Copyright (c) 2008-2013 All Rights Reserved.
  */
-package com.chuangge.authcenter.model.result;
+package com.chuangge.user.model.result;
 
 import java.io.Serializable;
 

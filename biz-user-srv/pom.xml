@@ -113,7 +113,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>../lib/</classpathPrefix>
-							<mainClass>com.chuangge.authcenter.Start</mainClass>
+							<mainClass>com.chuangge.user.Start</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

@@ -1,8 +1,8 @@
-package com.chuangge.authcenter.manager;
+package com.chuangge.user.manager;
 
-import com.chuangge.authcenter.exception.AuthCenterException;
-import com.chuangge.authcenter.model.domain.AuthUser;
-import com.chuangge.authcenter.model.result.ResultDO;
+import com.chuangge.user.exception.AuthCenterException;
+import com.chuangge.user.model.domain.AuthUser;
+import com.chuangge.user.model.result.ResultDO;
 
 /**
  * hoss系统登录用户manager

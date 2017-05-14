@@ -1,4 +1,4 @@
-package com.chuangge.authcenter;
+package com.chuangge.user;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,14 +1,14 @@
-package com.chuangge.authcenter.manager.impl;
+package com.chuangge.user.manager.impl;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.chuangge.authcenter.dao.AuthUserMapper;
-import com.chuangge.authcenter.exception.AuthCenterException;
-import com.chuangge.authcenter.manager.AuthUserManager;
-import com.chuangge.authcenter.model.domain.AuthUser;
-import com.chuangge.authcenter.model.result.ResultDO;
+import com.chuangge.user.dao.AuthUserMapper;
+import com.chuangge.user.exception.AuthCenterException;
+import com.chuangge.user.manager.AuthUserManager;
+import com.chuangge.user.model.domain.AuthUser;
+import com.chuangge.user.model.result.ResultDO;
 
 /**
  * hoss系统登录用户manager

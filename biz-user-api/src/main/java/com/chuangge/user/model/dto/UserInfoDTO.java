@@ -1,4 +1,4 @@
-package com.chuangge.authcenter.model.dto;
+package com.chuangge.user.model.dto;
 
 import java.io.Serializable;
 import java.util.List;
