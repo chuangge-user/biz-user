@@ -19,6 +19,7 @@
 		<sso-web-version>1.0-SNAPSHOT</sso-web-version>
 		<sso-auth-version>1.0-SNAPSHOT</sso-auth-version>
 		<chuangge.framework.version>1.0-RELEASE</chuangge.framework.version>
+		<taobao.sdk.version>1.0-RELEASE</taobao.sdk.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -69,8 +70,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>

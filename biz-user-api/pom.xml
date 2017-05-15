@@ -27,6 +27,11 @@
 			<artifactId>commons-lang</artifactId>
 			<version>${commonsLang.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.chuangge</groupId>
+			<artifactId>taobao.sdk</artifactId>
+			<version>${taobao.sdk.version}</version>
+		</dependency>
 	</dependencies>
 
 </project>
